@@ -17,3 +17,20 @@ Where `<installation-location>` was the name of my directory.
 
 3. `source ~/.bash_profile` to refresh.
 4. Try to login to the server (that was already running) via `mysql -u root -p`, which prompted me for the password. Success!
+
+## Database 101
+* `CREATE DATABASE database_name` - Create a new database.
+* `USE database_name` - Defines the database to be used
+
+`CREATE TABLE my_contacts
+(
+last_name VARCHAR(30),
+first_name VARCHAR(20),
+email VARCHAR(50),
+birthday DATE,
+profession VARCHAR(50),
+location VARCHAR(50),
+status VARCHAR(20),
+interests VARCHAR(100),
+seeking VARCHAR(100)
+);`
